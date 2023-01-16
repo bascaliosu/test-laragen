@@ -1,1 +1,1 @@
-{{ ${"id":32,"model_id":11,"column_name":"deleted_at","column_type":"3","is_nullable":1,"is_unique":0,"default_value":null,"has_default_value":0,"created_at":"2023-01-13T07:47:06.000000Z","updated_at":"2023-01-13T07:47:06.000000Z","extra_options":{"read_only":true},"deleted_at":null}->deleted_at }}
+{{ $usercontroller->deleted_at }}

@@ -1,1 +1,1 @@
-{{ ${"id":29,"model_id":11,"column_name":"password","column_type":"5","is_nullable":0,"is_unique":0,"default_value":null,"has_default_value":0,"created_at":"2023-01-13T07:47:06.000000Z","updated_at":"2023-01-13T07:47:06.000000Z","extra_options":{"length":255,"read_only":true},"deleted_at":null}->password }}
+{{ $usercontroller->password }}
