@@ -1,1 +1,1 @@
-{{ $carcontroller->created_at }}
+{{ $car->created_at }}

@@ -1,1 +1,1 @@
-{{ $usercontroller->email_verified_at }}
+{{ $user->email_verified_at }}

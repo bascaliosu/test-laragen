@@ -1,1 +1,1 @@
-{{ $carcontroller->updated_at }}
+{{ $car->updated_at }}

@@ -1,1 +1,1 @@
-{{ $usercontroller->updated_at }}
+{{ $user->updated_at }}

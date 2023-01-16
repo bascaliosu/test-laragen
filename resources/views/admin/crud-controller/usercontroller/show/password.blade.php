@@ -1,1 +1,1 @@
-{{ $usercontroller->password }}
+{{ $user->password }}

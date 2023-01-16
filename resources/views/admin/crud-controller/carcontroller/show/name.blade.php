@@ -1,1 +1,1 @@
-{{ $carcontroller->name }}
+{{ $car->name }}

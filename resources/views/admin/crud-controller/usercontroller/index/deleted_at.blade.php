@@ -1,1 +1,1 @@
-{{ $usercontroller->deleted_at }}
+{{ $user->deleted_at }}

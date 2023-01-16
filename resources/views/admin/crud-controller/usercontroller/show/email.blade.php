@@ -1,1 +1,1 @@
-{{ $usercontroller->email }}
+{{ $user->email }}
