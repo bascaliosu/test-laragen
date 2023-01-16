@@ -1,1 +1,1 @@
-{{ $item->updated_at }}
+{{ $updated_at->updated_at }}

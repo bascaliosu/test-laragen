@@ -1,1 +1,1 @@
-{{ $item->email }}
+{{ $email->email }}

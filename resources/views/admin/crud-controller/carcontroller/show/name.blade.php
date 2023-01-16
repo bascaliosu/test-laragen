@@ -1,1 +1,1 @@
-{{ $item->name }}
+{{ $name->name }}

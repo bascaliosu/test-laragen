@@ -1,1 +1,1 @@
-{{ $item->email_verified_at }}
+{{ $email_verified_at->email_verified_at }}
