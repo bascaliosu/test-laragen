@@ -1,1 +1,1 @@
-{{ $email->email }}
+{{ ${"id":27,"model_id":11,"column_name":"email","column_type":"5","is_nullable":0,"is_unique":1,"default_value":null,"has_default_value":0,"created_at":"2023-01-13T07:47:06.000000Z","updated_at":"2023-01-13T07:47:06.000000Z","extra_options":{"length":255},"deleted_at":null}->email }}
