@@ -14,6 +14,6 @@ trait IndexTrait
     {
         $items = CarOwner::paginate($this->perPage);
 
-        return view('livewire.carowner.index', compact('items'));
+        return view('livewire.car-owner.index', compact('items'));
     }
 }
