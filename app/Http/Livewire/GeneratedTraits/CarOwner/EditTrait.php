@@ -21,7 +21,7 @@ trait EditTrait
 
         $this->carOwner->save();
 
-        return redirect()->route('laragencarOwners.index');
+        return redirect()->route('laragencar_owners.index');
     }
 
     public function rules(): array
