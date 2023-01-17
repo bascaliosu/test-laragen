@@ -9,16 +9,16 @@
                 <thead>
                     <tr>
                                                     <th class="w-28">
-                                {{ trans('cruds.application.fields.id') }}
+                                {{ trans('cruds.application.fields.{{ $crudControllerView->linkedModelIsRelation() ? $crudControllerView->linkedModel->name : $crudControllerView->linkedModel->column_name }}') }}
                             </th>
                                                     <th class="w-28">
-                                {{ trans('cruds.application.fields.created_at') }}
+                                {{ trans('cruds.application.fields.{{ $crudControllerView->linkedModelIsRelation() ? $crudControllerView->linkedModel->name : $crudControllerView->linkedModel->column_name }}') }}
                             </th>
                                                     <th class="w-28">
-                                {{ trans('cruds.application.fields.updated_at') }}
+                                {{ trans('cruds.application.fields.{{ $crudControllerView->linkedModelIsRelation() ? $crudControllerView->linkedModel->name : $crudControllerView->linkedModel->column_name }}') }}
                             </th>
                                                     <th class="w-28">
-                                {{ trans('cruds.application.fields.name') }}
+                                {{ trans('cruds.application.fields.{{ $crudControllerView->linkedModelIsRelation() ? $crudControllerView->linkedModel->name : $crudControllerView->linkedModel->column_name }}') }}
                             </th>
                                             </tr>
                 </thead>

@@ -1,1 +1,1 @@
-{{ $user->password }}
+{{ $item->password }}

@@ -1,1 +1,1 @@
-{{ $user->name }}
+{{ $item->name }}
