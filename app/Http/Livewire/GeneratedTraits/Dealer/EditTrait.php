@@ -2,7 +2,8 @@
 namespace App\Http\Livewire\GeneratedTraits\Dealer;
 
 use App\Models\Dealer;
-                        use Illuminate\Database\Eloquent\Collection;
+                                    use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Validation\Rule;
 
 trait EditTrait
 {
@@ -27,7 +28,10 @@ trait EditTrait
     {
         return [
                                                                     'dealer.status' => [
-                                                                                                                ],
+                                                                                                                    Rule::in([
+                        
+                    ]),
+                                ],
                                                                     'dealer.status2' => [
                                                                                                                 ],
                                                                     'dealer.status3' => [
