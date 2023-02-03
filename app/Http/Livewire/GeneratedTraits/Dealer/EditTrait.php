@@ -2,7 +2,7 @@
 namespace App\Http\Livewire\GeneratedTraits\Dealer;
 
 use App\Models\Dealer;
-            use Illuminate\Database\Eloquent\Collection;
+                        use Illuminate\Database\Eloquent\Collection;
 
 trait EditTrait
 {

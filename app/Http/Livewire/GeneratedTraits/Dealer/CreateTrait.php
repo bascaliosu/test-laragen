@@ -2,10 +2,8 @@
 namespace App\Http\Livewire\GeneratedTraits\Dealer;
 
 use App\Models\Dealer;
-                use Illuminate\Validation\Rule;
-                    use Illuminate\Validation\Rule;
-                    use Illuminate\Validation\Rule;
-    use Illuminate\Database\Eloquent\Collection;
+                                                            use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Validation\Rule;
 
 trait CreateTrait
 {

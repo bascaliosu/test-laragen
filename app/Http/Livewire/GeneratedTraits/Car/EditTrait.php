@@ -2,9 +2,9 @@
 namespace App\Http\Livewire\GeneratedTraits\Car;
 
 use App\Models\Car;
-                use App\Models\Owner;
-                use App\Models\CarType;
-    use Illuminate\Database\Eloquent\Collection;
+                    use App\Models\Owner;
+                    use App\Models\CarType;
+        use Illuminate\Database\Eloquent\Collection;
 
 trait EditTrait
 {
