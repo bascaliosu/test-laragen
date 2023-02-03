@@ -1,31 +1,23 @@
-<form wire:submit.prevent="submit" class="pt-3" novalidate>
+<x-laragen::form wire:submit.prevent="submit" class="pt-3">
                     <fieldset>
-                            @includeFirst(
-                    [
-                        'admin.crud-controller.usercontroller.create.name',
-                        'admin.generated.crud-controller.usercontroller.create.name'
-                    ]
-                )
-                            @includeFirst(
-                    [
-                        'admin.crud-controller.usercontroller.create.email',
-                        'admin.generated.crud-controller.usercontroller.create.email'
-                    ]
-                )
-                            @includeFirst(
-                    [
-                        'admin.crud-controller.usercontroller.create.user_id',
-                        'admin.generated.crud-controller.usercontroller.create.user_id'
-                    ]
-                )
+                                            @includeFirst([
+                    'admin.crud-controller.usercontroller.create.name',
+                    'admin.generated.crud-controller.usercontroller.create.name'
+                ])
+                @includeIf('admin.crud-controller.usercontroller.create.name_after')
+                                            @includeFirst([
+                    'admin.crud-controller.usercontroller.create.email',
+                    'admin.generated.crud-controller.usercontroller.create.email'
+                ])
+                @includeIf('admin.crud-controller.usercontroller.create.email_after')
                     </fieldset>
     
     <div class="form-group">
-        <button class="btn btn-indigo mr-2" type="submit">
-            {{ trans('global.save') }}
-        </button>
-        <a href="{{ route('laragen{{ strtolower($crudController->model->table_name) }}.index') }}" class="btn btn-secondary">
+
+        <x-laragen::button class="mr-2">            {{ trans('global.save') }}        </x-laragen::button>
+                <a href="{{ route('laragen.admin.users.index') }}" class="btn btn-secondary">
             {{ trans('global.cancel') }}
         </a>
     </div>
-</form>
+
+</x-laragen::form>

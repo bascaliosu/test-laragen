@@ -1,0 +1,1 @@
+{{ $carType->name }}

@@ -1,18 +1,9 @@
-<x-'x-layouts.app'>
-<div class="row">
-    <div class="card bg-blueGray-100">
-        <div class="card-header">
-            <div class="card-header-container">
-                <h6 class="card-title">
-                    {{ trans('global.edit') }}
-                    {{ trans('cruds.{{ strtolower($modelName) }}.title_singular') }}
-                </h6>
-            </div>
-        </div>
+<x-layouts.app>
 
-        <div class="card-body">
-            @livewire('car.edit', ['car' => $car])
-        </div>
-    </div>
-</div>
-</x-'layouts.app'>
+    <x-slot:title>    <h1>
+        {{ trans('global.edit') }}
+        {{ trans('cruds.car.title_singular') }}    </h1>
+    </x-slot:title>
+    @livewire('car.edit', ['car' => $car])
+
+</x-layouts.app>

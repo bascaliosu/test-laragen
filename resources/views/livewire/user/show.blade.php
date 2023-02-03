@@ -2,8 +2,7 @@
     <table class="mt-6 w-full">
                     <tr>
                 <th class="text-left">
-                    id
-                </th>
+                    {{ trans('cruds.user.fields.id') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -13,10 +12,10 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.id_after')
                     <tr>
                 <th class="text-left">
-                    name
-                </th>
+                    {{ trans('cruds.user.fields.name') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -26,10 +25,10 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.name_after')
                     <tr>
                 <th class="text-left">
-                    email
-                </th>
+                    {{ trans('cruds.user.fields.email') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -39,10 +38,10 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.email_after')
                     <tr>
                 <th class="text-left">
-                    email_verified_at
-                </th>
+                    {{ trans('cruds.user.fields.email_verified_at') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -52,10 +51,10 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.email_verified_at_after')
                     <tr>
                 <th class="text-left">
-                    password
-                </th>
+                    {{ trans('cruds.user.fields.password') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -65,10 +64,10 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.password_after')
                     <tr>
                 <th class="text-left">
-                    created_at
-                </th>
+                    {{ trans('cruds.user.fields.created_at') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -78,10 +77,10 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.created_at_after')
                     <tr>
                 <th class="text-left">
-                    updated_at
-                </th>
+                    {{ trans('cruds.user.fields.updated_at') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -91,10 +90,10 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.updated_at_after')
                     <tr>
                 <th class="text-left">
-                    deleted_at
-                </th>
+                    {{ trans('cruds.user.fields.deleted_at') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -104,5 +103,6 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.usercontroller.show.deleted_at_after')
             </table>
 </div>

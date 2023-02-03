@@ -1,5 +1,4 @@
 <?php
-
 /**
 * Trait UserTrait
 *
@@ -8,13 +7,9 @@
 
 namespace App\Models\GeneratedTraits;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
-
-use App\Models\Car;
-
 trait UserTrait
 {
-            use SoftDeletes;
+            use \Illuminate\Database\Eloquent\SoftDeletes;
     
     public function getTable()
     {
@@ -23,7 +18,11 @@ trait UserTrait
 
     public function getFillable()
     {
-        return $this->fillable ?? [
+        if (!empty($this->fillable)) {
+            return $this->fillable;
+        }
+
+        return [
                             'id',
                             'name',
                             'email',
@@ -35,8 +34,4 @@ trait UserTrait
                     ];
     }
 
-                                public function cars(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
-            {
-                return $this->belongsToMany(Car::class, 'car_user', 'user_id', 'car_id', 'id', 'id', null);
-            }
-                    }
+    }

@@ -1,5 +1,4 @@
 <?php
-
 /**
 * Trait CarTrait
 *
@@ -7,9 +6,6 @@
 */
 
 namespace App\Models\GeneratedTraits;
-
-
-use App\Models\User;
 
 trait CarTrait
 {
@@ -21,16 +17,26 @@ trait CarTrait
 
     public function getFillable()
     {
-        return $this->fillable ?? [
+        if (!empty($this->fillable)) {
+            return $this->fillable;
+        }
+
+        return [
                             'id',
                             'created_at',
                             'updated_at',
                             'name',
+                            'car_owner_id',
+                            'type_id',
                     ];
     }
 
-                                public function users(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+                        public function car_owner(): \Illuminate\Database\Eloquent\Relations\BelongsTo
             {
-                return $this->belongsToMany(User::class, 'car_user', 'car_id', 'user_id', 'id', 'id', null);
+                return $this->belongsTo(\App\Models\Owner::class);
             }
-                    }
+                                                public function type(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+            {
+                return $this->belongsTo(\App\Models\CarType::class);
+            }
+                            }

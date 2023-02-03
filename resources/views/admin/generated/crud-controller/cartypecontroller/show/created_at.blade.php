@@ -1,0 +1,1 @@
+{{ $carType->created_at }}

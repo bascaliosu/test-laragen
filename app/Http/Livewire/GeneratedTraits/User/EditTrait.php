@@ -1,22 +1,18 @@
 <?php
-
 namespace App\Http\Livewire\GeneratedTraits\User;
 
 use App\Models\User;
-                    use App\Models\Car;
-    use Illuminate\Database\Eloquent\Collection;
+        use Illuminate\Database\Eloquent\Collection;
 
 trait EditTrait
 {
-                                                public Collection $cars;
-            
     public User $user;
 
+                                            
     public function mount(User $user)
     {
         $this->user = $user;
-                                                                                                                $this->cars = $this->user->cars;
-                        }
+                                                    }
 
     public function submit()
     {
@@ -24,17 +20,15 @@ trait EditTrait
 
         $this->user->save();
 
-        return redirect()->route('laragenusers.index');
+        return redirect()->route('laragen.admin.users.index');
     }
 
     public function rules(): array
     {
         return [
-                                                'user.name' => [
+                                                                    'user.name' => [
                                                                                                                 ],
-                                                'user.email' => [
-                                                                                                                ],
-                                                'cars' => [
+                                                                    'user.email' => [
                                                                                                                 ],
                     ];
     }

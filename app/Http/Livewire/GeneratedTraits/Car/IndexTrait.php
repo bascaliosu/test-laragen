@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Livewire\GeneratedTraits\Car;
 
 use App\Models\Car;
@@ -16,4 +15,10 @@ trait IndexTrait
 
         return view('livewire.car.index', compact('items'));
     }
-}
+
+            public function delete(Car $car): void
+        {
+                                                                    
+            $car->delete();
+        }
+    }

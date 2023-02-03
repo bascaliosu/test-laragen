@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Livewire\GeneratedTraits\User;
 
 use App\Models\User;
@@ -16,4 +15,10 @@ trait IndexTrait
 
         return view('livewire.user.index', compact('items'));
     }
-}
+
+            public function delete(User $user): void
+        {
+            
+            $user->delete();
+        }
+    }
