@@ -5,16 +5,6 @@
                     'admin.generated.crud-controller.carcontroller.create.name'
                 ])
                 @includeIf('admin.crud-controller.carcontroller.create.name_after')
-                                            @includeFirst([
-                    'admin.crud-controller.carcontroller.create.car_owner_id',
-                    'admin.generated.crud-controller.carcontroller.create.car_owner_id'
-                ])
-                @includeIf('admin.crud-controller.carcontroller.create.car_owner_id_after')
-                                            @includeFirst([
-                    'admin.crud-controller.carcontroller.create.type_id',
-                    'admin.generated.crud-controller.carcontroller.create.type_id'
-                ])
-                @includeIf('admin.crud-controller.carcontroller.create.type_id_after')
                     </fieldset>
     
     <div class="form-group">

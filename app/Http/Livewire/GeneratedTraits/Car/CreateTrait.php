@@ -2,23 +2,18 @@
 namespace App\Http\Livewire\GeneratedTraits\Car;
 
 use App\Models\Car;
-                    use App\Models\Owner;
-                    use App\Models\CarType;
-        use Illuminate\Database\Eloquent\Collection;
+                    use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Validation\Rule;
 
 trait CreateTrait
 {
     public Car $car;
 
-                                            public Collection $owners;
-                                        public Collection $carTypes;
-                    
+                        
     public function mount(Car $car)
     {
         $this->car = $car;
-                                                        $this->owners = Owner::all();
-                                                $this->carTypes = CarType::all();
-                        }
+                                }
 
     public function submit()
     {
@@ -33,11 +28,10 @@ trait CreateTrait
     {
         return [
                                                                     'car.name' => [
-                                                                                                                ],
-                                                                    'car.car_owner_id' => [
-                                                                                                                ],
-                                                                    'car.type_id' => [
-                                                                                                                ],
+                                                                                                                    Rule::in([
+                        test_name_1,test_name_2
+                    ]),
+                                ],
                     ];
     }
 }

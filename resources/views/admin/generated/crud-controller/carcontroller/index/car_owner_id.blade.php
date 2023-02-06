@@ -1,1 +1,0 @@
-{{ $item->car_owner->id }}

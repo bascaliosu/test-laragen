@@ -18,7 +18,7 @@ trait IndexTrait
 
             public function delete(Car $car): void
         {
-                                                                    
+            
             $car->delete();
         }
     }

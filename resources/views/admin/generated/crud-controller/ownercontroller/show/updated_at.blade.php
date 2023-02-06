@@ -1,1 +1,0 @@
-{{ $owner->updated_at }}

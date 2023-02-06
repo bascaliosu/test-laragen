@@ -28,16 +28,6 @@
                             @if(\View::exists('admin.crud-controller.carcontroller.index.name_after_header'))
                                 @includeIf('admin.crud-controller.carcontroller.index.name_after_header')
                             @endif
-                                                    <th class="w-28">
-                                {{ trans('cruds.car.fields.car_owner') }}                            </th>
-                            @if(\View::exists('admin.crud-controller.carcontroller.index.car_owner_id_after_header'))
-                                @includeIf('admin.crud-controller.carcontroller.index.car_owner_id_after_header')
-                            @endif
-                                                    <th class="w-28">
-                                {{ trans('cruds.car.fields.type') }}                            </th>
-                            @if(\View::exists('admin.crud-controller.carcontroller.index.type_id_after_header'))
-                                @includeIf('admin.crud-controller.carcontroller.index.type_id_after_header')
-                            @endif
                                                 <th class="w-28">{{ trans('global.actions') }}</th>
                     </tr>
                 </thead>
@@ -91,30 +81,6 @@
                                 </td>
                                 @if(\View::exists('admin.crud-controller.carcontroller.index.name_after_row'))
                                     @includeIf('admin.crud-controller.carcontroller.index.name_after_row')
-                                @endif
-                                                            <td>
-                                    @includeFirst(
-                                        [
-                                            'admin.crud-controller.carcontroller.index.car_owner_id',
-                                            'admin.generated.crud-controller.carcontroller.index.car_owner_id'
-                                        ]
-                                    )
-                                    @includeIf('admin.crud-controller.carcontroller.index.car_owner_id_after')
-                                </td>
-                                @if(\View::exists('admin.crud-controller.carcontroller.index.car_owner_id_after_row'))
-                                    @includeIf('admin.crud-controller.carcontroller.index.car_owner_id_after_row')
-                                @endif
-                                                            <td>
-                                    @includeFirst(
-                                        [
-                                            'admin.crud-controller.carcontroller.index.type_id',
-                                            'admin.generated.crud-controller.carcontroller.index.type_id'
-                                        ]
-                                    )
-                                    @includeIf('admin.crud-controller.carcontroller.index.type_id_after')
-                                </td>
-                                @if(\View::exists('admin.crud-controller.carcontroller.index.type_id_after_row'))
-                                    @includeIf('admin.crud-controller.carcontroller.index.type_id_after_row')
                                 @endif
                                                         <td>
                                 <div class="form-group">

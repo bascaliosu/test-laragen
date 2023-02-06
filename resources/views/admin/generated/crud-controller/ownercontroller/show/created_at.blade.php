@@ -1,1 +1,0 @@
-{{ $owner->created_at }}

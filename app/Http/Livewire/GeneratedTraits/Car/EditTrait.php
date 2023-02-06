@@ -2,23 +2,17 @@
 namespace App\Http\Livewire\GeneratedTraits\Car;
 
 use App\Models\Car;
-                    use App\Models\Owner;
-                    use App\Models\CarType;
         use Illuminate\Database\Eloquent\Collection;
 
 trait EditTrait
 {
     public Car $car;
 
-                                            public Collection $owners;
-                                        public Collection $carTypes;
-                    
+                        
     public function mount(Car $car)
     {
         $this->car = $car;
-                                                        $this->owners = Owner::all();
-                                                $this->carTypes = CarType::all();
-                        }
+                                }
 
     public function submit()
     {
@@ -33,10 +27,6 @@ trait EditTrait
     {
         return [
                                                                     'car.name' => [
-                                                                                                                ],
-                                                                    'car.car_owner_id' => [
-                                                                                                                ],
-                                                                    'car.type_id' => [
                                                                                                                 ],
                     ];
     }

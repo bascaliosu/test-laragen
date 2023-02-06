@@ -26,17 +26,7 @@ trait CarTrait
                             'created_at',
                             'updated_at',
                             'name',
-                            'car_owner_id',
-                            'type_id',
                     ];
     }
 
-                        public function car_owner(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-            {
-                return $this->belongsTo(\App\Models\Owner::class);
-            }
-                                                public function type(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-            {
-                return $this->belongsTo(\App\Models\CarType::class);
-            }
-                            }
+    }
