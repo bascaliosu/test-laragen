@@ -29,7 +29,7 @@ trait CreateTrait
         return [
                                                                     'car.prenume' => [
                                                                                                                                                                                                                                                     Rule::in([
-                        &quot;1&quot;,&quot;0&quot;,
+                        "1","0",
                     ]),
                                 ],
                     ];
