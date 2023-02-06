@@ -52,5 +52,18 @@
                 </td>
             </tr>
             @includeIf('admin.crud-controller.carcontroller.show.name_after')
+                    <tr>
+                <th class="text-left">
+                    {{ trans('cruds.car.fields.prenume') }}                </th>
+                <td>
+                    @includeFirst(
+                        [
+                        'admin.crud-controller.carcontroller.show.prenume',
+                        'admin.generated.crud-controller.carcontroller.show.prenume'
+                        ]
+                    )
+                </td>
+            </tr>
+            @includeIf('admin.crud-controller.carcontroller.show.prenume_after')
             </table>
 </div>

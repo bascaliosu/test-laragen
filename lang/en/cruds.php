@@ -34,6 +34,8 @@ return [
             'updated_at_helper' => '',
             'name' => 'Name',
             'name_helper' => '',
+            'prenume' => 'prenume',
+            'prenume_helper' => '',
         ],
     ],
 ];

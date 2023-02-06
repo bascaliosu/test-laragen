@@ -28,6 +28,11 @@
                             @if(\View::exists('admin.crud-controller.carcontroller.index.name_after_header'))
                                 @includeIf('admin.crud-controller.carcontroller.index.name_after_header')
                             @endif
+                                                    <th class="w-28">
+                                {{ trans('cruds.car.fields.prenume') }}                            </th>
+                            @if(\View::exists('admin.crud-controller.carcontroller.index.prenume_after_header'))
+                                @includeIf('admin.crud-controller.carcontroller.index.prenume_after_header')
+                            @endif
                                                 <th class="w-28">{{ trans('global.actions') }}</th>
                     </tr>
                 </thead>
@@ -81,6 +86,18 @@
                                 </td>
                                 @if(\View::exists('admin.crud-controller.carcontroller.index.name_after_row'))
                                     @includeIf('admin.crud-controller.carcontroller.index.name_after_row')
+                                @endif
+                                                            <td>
+                                    @includeFirst(
+                                        [
+                                            'admin.crud-controller.carcontroller.index.prenume',
+                                            'admin.generated.crud-controller.carcontroller.index.prenume'
+                                        ]
+                                    )
+                                    @includeIf('admin.crud-controller.carcontroller.index.prenume_after')
+                                </td>
+                                @if(\View::exists('admin.crud-controller.carcontroller.index.prenume_after_row'))
+                                    @includeIf('admin.crud-controller.carcontroller.index.prenume_after_row')
                                 @endif
                                                         <td>
                                 <div class="form-group">

@@ -1,9 +1,8 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\Car;
 
-use App\Models\Car;
-                    use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Validation\Rule;
+
+
+        use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
@@ -27,11 +26,8 @@ trait CreateTrait
     public function rules(): array
     {
         return [
-                                                                    'car.name' => [
-                                                                                                                    Rule::in([
-                        test_name_1,test_name_2
-                    ]),
-                                ],
+                                                                    'car.prenume' => [
+                                                                                                                ],
                     ];
     }
 }

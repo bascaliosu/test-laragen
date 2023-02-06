@@ -1,10 +1,10 @@
 <x-laragen::form wire:submit.prevent="submit" class="pt-3">
                     <fieldset>
                                             @includeFirst([
-                    'admin.crud-controller.carcontroller.create.name',
-                    'admin.generated.crud-controller.carcontroller.create.name'
+                    'admin.crud-controller.carcontroller.create.prenume',
+                    'admin.generated.crud-controller.carcontroller.create.prenume'
                 ])
-                @includeIf('admin.crud-controller.carcontroller.create.name_after')
+                @includeIf('admin.crud-controller.carcontroller.create.prenume_after')
                     </fieldset>
     
     <div class="form-group">
