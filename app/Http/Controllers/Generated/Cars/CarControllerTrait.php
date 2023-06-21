@@ -35,4 +35,12 @@ trait CarControllerTrait
 
         return view('app.generated.cars.car.edit', compact('car'));
     }
+    public function show(Car $car): View
+    {
+        if (BladeView::exists('app.cars.car.show')) {
+            return view('app.cars.car.show', compact('car'));
+        }
+
+        return view('app.generated.cars.car.show', compact('car'));
+    }
 }
